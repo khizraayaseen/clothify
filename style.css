@@ -6,15 +6,17 @@
     font-family: "Jost", sans-serif;
     list-style: none;
     text-decoration: none;
-
 }
 
 :root{
-    --primary-color:rgb(223, 48, 48);
-    --secondary-color:rgb(75, 74, 74);
+
+    --primary-color:  #b8954b;
+    --secondary-color:#f5eeee;
+    --third-color: #252525;
 }
 
 header{
+    background-color: var(--third-color);
     position: fixed;
     width: 100%;
     top:0;
@@ -34,6 +36,7 @@ header{
 .navbar{
     display: flex;
 }
+
 .navbar a{
     color: var(--secondary-color);
     font-size: 16px;
@@ -50,7 +53,7 @@ header{
 .navicon{
     display: flex;
     align-items: center;    
-    justify-content: space-between
+    justify-content: space-between;
 
 }
 
@@ -63,7 +66,7 @@ header{
 }
 
 .navicon i:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
     color: var(--primary-color);
 }
 
@@ -79,13 +82,12 @@ section{
 }
 
 .mainhome{
-    height: 550px;
+    height: 575px;
     background-image: url(backkground.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
     background-position: top 50% right 2%;
-    background-color: rgb(245, 241, 241);    
+    background-color: #b8954b;    
 }
 
 .maintext {
@@ -93,14 +95,14 @@ section{
 }
 
 .maintext h5{
-color: var(--primary-color);
+color: rgb(243, 23, 23);
 font-size: 20px;
 text-transform: uppercase;
 font-weight: 500;
 }
 
 .maintext h1{
-color: black;
+color: var(--third-color);
 font-size: 50px;
 text-transform: uppercase;
 line-height: 1.1;
@@ -109,7 +111,7 @@ margin: 6px 0 10px;
 }
 
 .maintext p{
-    color: var(--secondary-color);
+    color: var(--third-color);
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
@@ -118,19 +120,19 @@ margin: 6px 0 10px;
 
 .main-btn{
 display: inline-block;
-color:var(--secondary-color);
+color:var(--third-color);
 font-size: 16px;
 font-weight: 500;
 text-transform: capitalize;
-border: 2px solid var(--secondary-color);
+border: 2px solid var(--third-color);
 padding: 12px 25px;
 transition: all .42s ease;
 }
 
 .main-btn:hover{
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: white;
+    background-color: var(--third-color);
+    border: 2px solid var(--third-color);
+    color: var(--secondary-color);
 }
 .main-btn i{
     vertical-align: middle;
@@ -144,17 +146,163 @@ transition: all .42s ease;
 
 .down i{
 font-size: 30px;
-color:var(--secondary-color);
-border: 2px solid var(--secondary-color);
+color:var(--third-color);
+border: 2px solid var(--third-color);
 border-radius: 50px;
 padding: 12px 12px;
 }
 
 .down i:hover{
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: white;
-} 
+    background-color: var(--third-color);
+    border: 2px solid var(--third-color);
+    color: var(--secondary-color);
+}
+
+header.sticky{
+    background-color:  var(--third-color);
+    padding: 20px 10px;
+    box-shadow: 0px 0pz 10px var(--third-color);
+}
 
 
+/*trendingitems*/
 
+.centertext h2{
+    font-weight: 700;
+    color: var(--third-color);
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.centertext span{
+    color: var(--primary-color);
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, auto));
+    gap: 1.2rem;
+}
+
+.row{
+    padding-bottom: 20%;
+    position: relative;
+    transition: all 0.40s;
+}
+
+.row img{
+    width: 100%;
+    height: 85%;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.itemtext h5{
+position: absolute;
+top:10px;
+right: 20px;
+color: var(--secondary-color);
+font-size: 12px;
+font-weight: 500;
+text-transform: uppercase;
+background-color: rgb(243, 23, 23);
+padding: 3px 10px;
+border-radius: 2px;
+}
+
+.hearticon{
+    position: absolute;
+    padding-bottom: 20%;
+    right: 0;
+    font-size: 30px;
+}
+
+.hearticon:hover{
+    color: var(--primary-color);
+}
+
+.rating{
+    color:orange;
+    font-size: 18px;
+}
+
+.price h4{
+    color: var(--third-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.price p{
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.clientreviews{
+    background-color: var(--third-color);
+}
+
+.reviews{
+    text-align: center;
+}
+
+.reviews h3{
+    color: var(--third-color);
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img{
+    width: 80px;
+    height: auto;
+    border-radius: 56px;
+    margin: 10px 0 ;
+}
+
+.reviews p{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews h2{
+    font-size: 22px;
+    color: var(--third-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.footer{
+background-color: #252525;
+color: #f5eeee;
+}
+
+.footer i{
+    font-weight: 550;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+footer i:hover{
+    transform: scale(1.5);
+    color: var(--primary-color);
+}
+
+.footer p{
+    color: var(--secondary-color);
+}
+
+.footer p:hover{
+    color: var(--primary-color);
+}
