@@ -1,0 +1,223 @@
+
+
+.mainheadCart {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Adjust the color as needed */
+  }
+.cart-card {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Main section of the cart */
+.cart-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each product item box */
+.cart_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Product image and name */
+.cart_img {
+    display: flex;
+    align-items: center;
+}
+
+.cart_img img {
+    width: 120px; /* Increased width */
+    height: 120px; /* Increased height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px; /* Increased margin */
+}
+
+.cart_img p {
+    font-size: 18px; /* Increased font size */
+    font-weight: 600;
+    color: #333;
+}
+
+/* Buttons for increasing and decreasing quantity */
+.cart_box div {
+    display: flex;
+    align-items: center;
+}
+
+.cart_box button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px; /* Increased padding */
+    margin: 0 10px; /* Increased margin */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cart_box button:hover {
+    background: #0056b3;
+}
+
+/* Price display */
+.cart_box span {
+    font-size: 18px; /* Increased font size */
+    font-weight: 600;
+    color: #333;
+    margin-right: 15px;
+}
+
+/* Remove button */
+.cart_box button:last-child {
+    background: #dc3545;
+}
+
+.cart_box button:last-child:hover {
+    background: #c82333;
+}
+
+/* Total price section */
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    border-top: 2px solid #e0e0e0;
+    font-size: 20px; /* Increased font size */
+    font-weight: 600;
+    color: #333;
+}
+
+.checkout button {
+    /* Basic styling */
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    /* Shadow and outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.checkout-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.checkout-button:active {
+    background-color: #1e7e34; /* Even darker green on click */
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.checkout button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Green outline on focus */
+}
+
+/* For disabled state */
+.checkout-button:disabled {
+    background-color: #c3e6cb; /* Light green background */
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+.total span {
+    font-size: 22px; /* Increased font size */
+    font-weight: 700;
+    color: #007bff;
+}
+
+.checkout-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 90%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .pay-button {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .close-button {
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
