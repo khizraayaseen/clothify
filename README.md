@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Clothify - MERN E-commerce Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+**Clothify** is a full-stack e-commerce web application built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to browse, search, and purchase clothing items, and provides an admin interface for managing products and orders.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Secure login and registration system.
+- **Product Management**: Admins can add, edit, and delete products.
+- **Shopping Cart**: Users can add items to their cart and proceed to checkout.
+- **Order Management**: Users can view their order history, and admins can manage orders.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **backend/**: Contains server-side code using Node.js and Express.
+- **data.json**: Sample data for populating the database.
+- **index.html**: Entry point for the React frontend.
+- **package.json**: Lists project dependencies and scripts.
+- **script.js**: Frontend JavaScript code.
+- **server.js**: Main server-side file for handling requests.
+- **style.css**: Stylesheet for the frontend.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd clothify
+   ```
 
-### `npm run build`
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Set up the backend**:
+   - Navigate to the `backend/` directory.
+   - Install backend dependencies:
+     ```bash
+     npm install
+     ```
+   - Configure environment variables (e.g., MongoDB connection URI).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Run the application**:
+   - Start the backend server:
+     ```bash
+     node server.js
+     ```
+   - Start the frontend:
+     ```bash
+     npm start
+     ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- Open your browser and go to `http://localhost:3000` to view the application.
+- Use the admin credentials to log in and manage products and orders.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for more details.
